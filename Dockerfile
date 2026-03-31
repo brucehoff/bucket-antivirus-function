@@ -1,9 +1,9 @@
-FROM public.ecr.aws/lambda/python:3.11
+FROM public.ecr.aws/lambda/python:3.11-al2023
 
 # Install packages
-RUN yum update -y
-RUN yum install -y cpio yum-utils zip unzip less wget
-RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+RUN dnf update -y
+RUN dnf install -y cpio zip unzip less wget
+RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 
 # Set up working directories
 RUN mkdir -p /opt/app
