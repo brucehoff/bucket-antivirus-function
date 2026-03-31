@@ -12,7 +12,6 @@ on:
 
 jobs:
   build-synapse-virus-scanner:
-    secrets: inherit
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
