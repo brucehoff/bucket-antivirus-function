@@ -5,10 +5,7 @@ name: build synapse virus scanner
 # the artifact is rebuilt so that we use the latest clam-av binary dependency
 
 on:
-  schedule:
-#    - cron: "0 6 * * *"
-# for testing, run every ten minutes
-    - cron: "*/1 * * * *"
+  workflow_dispatch:
 
 jobs:
   build-synapse-virus-scanner:
