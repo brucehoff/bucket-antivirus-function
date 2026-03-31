@@ -8,7 +8,7 @@ on:
   schedule:
 #    - cron: "0 6 * * *"
 # for testing, run every ten minutes
-    - cron: "*/10 * * * *"
+    - cron: "*/1 * * * *"
 
 jobs:
   build-synapse-virus-scanner:
